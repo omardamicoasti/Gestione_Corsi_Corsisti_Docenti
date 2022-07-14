@@ -1,0 +1,279 @@
+/* css generico */
+
+*{
+	/* border: 1px solid red; */ 
+	box-sizing: border-box;
+ 	padding: 0;
+ 	margin: 0;
+}
+body {
+ font-family: 'Poppins', sans-serif;
+ overflow: hidden;
+}
+li {
+ list-style-type: none;
+ color: black;
+}
+td a i {
+ font-size: 1.5em;
+ color: #3c3d41;
+ cursor: pointer;
+}
+thead {
+ position: sticky; 
+ top: 0;
+ background: #3c3d41;
+ color: white;
+}
+.container {
+ height: 70vh;
+}
+.btn {
+background-color: #3c3d41;
+color: white;
+}
+
+/* index */
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 1700px;
+}
+
+.containerindex, .container404, .containeraccesso {
+	display: flex;
+ 	justify-content: center;
+}
+
+.containerindex, .container404, .containeraccesso {
+	align-items: center;
+}
+.containerindex > div {
+ height: 60vh;
+ display: flex;
+}
+.containerindex > div:nth-child(2) {
+ justify-content: center;
+ align-items: flex-start;
+ flex-direction: column;
+}
+.containerindex > div:nth-child(2) span {
+ font-size: 7em;
+ font-weight: bold;
+}
+.containerindex > div:nth-child(2) p {
+ font-size: 2.6em;
+ font-weight: bold;
+}
+.containerindex > div:nth-child(1) {
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ background-image: url("../img/1_scontornatab.png");
+ background-position: center;
+ background-size: 550px;
+ background-repeat: no-repeat;
+}
+.container > div:nth-child(2) ul li, .container > div:nth-child(2) h1,  .container > div:nth-child(2) p {
+margin-bottom: 30px;
+}
+#login-panel {
+ width: 24vw;
+ min-width: 24vw;
+ max-width: 24vw;
+ margin-bottom: 30px;
+}
+.panel {
+ border:0;
+ box-shadow:none;
+}
+.form-control:focus {
+  border-color: light-grey;
+  box-shadow: inset 0 1px 1px rgb(211,211,211), 0 0 8px rgb(211,211,211);
+}
+.fade-in-image { 
+animation: fadeIn 2s; 
+}
+@keyframes fadeIn {
+  10% { opacity: 0; }
+  100% { opacity: 1; }
+}
+#loginbutton:hover {
+	color: white;
+	font-weight: bold;
+}
+.form-control {
+	border: 0px solid #f4f4f4;
+}
+.form-control:hover {
+	box-shadow: light-grey 0px 0px 16px;
+}
+/* corso */
+
+
+.containercorso, .containerinfocorsista {
+	height: 63vh!important;
+	display: flex;
+	justify-content: center;
+	overflow-y: scroll;
+	margin-bottom: 1vh;
+}
+
+/* corsisticorso */
+
+.containercorsisticorso {
+	/* height: 63vh; */
+	display: block !important;
+	/* //justify-content: center; */
+/* 	overflow-y: scroll; */
+	margin-bottom: 1vh;
+}
+
+#corsisti-table-container {
+	display: block!important;
+	background-image: none;
+	height: 80%;
+	overflow-y: scroll;
+}
+
+.corsistacorsi-buttons {
+	display: flex;
+	justify-content: center!important;
+	flex-direction: row!important;
+	height: initial!important;
+	padding: 20px;
+}
+
+.corsistacorsi-buttons a {
+	display:block;
+	
+}
+
+.corsistacorsi-buttons a:nth-child(2) {
+	display:block;
+	margin: 0 30px;
+}
+
+.bg-grey {
+	 background:#3c3d41;
+	 color: white;
+}
+.btn-secondary:hover{
+	color:white;
+}
+.fa-square-plus {
+	font-size: 2em;
+}
+/* totale corsisti */
+
+.btntotale {
+	background: white!important;
+	color:  #3c3d41!important;
+	font-size: 1.5em;
+}
+
+
+/* statistiche */
+
+.containerstatistica{
+	overflow-y: scroll;
+}
+
+/* errore404 */
+
+.container404 span, .containeraccesso span {
+	font-size: 8em;
+}
+.container404 p, .containeraccesso p {
+	font-size: 2em;
+	color: black;
+}
+
+
+
+/* accesso negato */
+
+.containeraccesso {
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+/* footer */
+
+.footer-bs {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 0;
+}
+.footer-bs {
+    background-color: #3c3d41;
+	color: rgba(255,255,255,1.00);
+	height: 15vh;
+}
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
+.footer-bs .footer-brand h2 { margin:0px 0px 10px; }
+.footer-bs .footer-brand p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+.footer-bs .footer-nav ul.pages { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.pages li { padding:5px 0px;}
+.footer-bs .footer-nav ul.pages a { color:rgba(255,255,255,1.00); font-weight:bold; text-transform:uppercase; }
+.footer-bs .footer-nav ul.pages a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+.footer-bs .footer-nav h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.footer-bs .footer-nav ul.list { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.list li { padding:5px 0px;}
+.footer-bs .footer-nav ul.list a { color:rgba(255,255,255,0.80); }
+.footer-bs .footer-nav ul.list a:hover { color:rgba(255,255,255,0.60); text-decoration:none; }
+
+.footer-bs .footer-social ul { list-style:none; padding:0px; }
+.footer-bs .footer-social h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.footer-bs .footer-social li { padding:5px 4px;}
+.footer-bs .footer-social a { color:rgba(255,255,255,1.00);}
+.footer-bs .footer-social a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+
+.footer-bs .footer-ns h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom:10px;
+}
+.footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
+img {
+	width: 50%;
+}
+@media (min-width: 768px) {
+	.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
+}
+@media (min-width: 1620px) {
+.containerindex {
+ height: 70vh;
+ width: 1500px;
+}
+.containerindex > div:nth-child(1) {
+ background-size: 680px;
+}
+}
+
+@media (min-width: 1999px) {
+	#login-panel {
+		width: 480px;
+		min-width: 480px;
+		max-width: 480px;
+	}
+}
+
